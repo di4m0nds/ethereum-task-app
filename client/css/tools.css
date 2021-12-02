@@ -1,0 +1,18 @@
+.eth {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 25px;
+}
+
+.block-form {
+  position: relative;
+  left: 4%;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+}
+
+.block-form label {
+  color: #fff;
+}

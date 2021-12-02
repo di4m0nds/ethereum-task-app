@@ -1,0 +1,41 @@
+/* Header */
+.eth__header {
+  flex: 1;
+}
+.eth__header-title {
+  margin: 10px 0;
+}
+.eth__header-subtitle {
+  text-align: right;
+  margin-right: 20px;
+}
+.eth__header-subtitle p {
+  color: #fff;
+  font-weight: 400;
+}
+.eth__header-subtitle p span {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.eth__header-account,
+.eth__header-account_wallet {
+  display: flex;
+  flex-direction: column;
+}
+.eth__header-account_wallet {
+  padding: 10px 0;
+  margin-top: 20px;
+  color: #fff;
+  border-bottom: 2px dashed #fff;
+}
+.eth__header-account_wallet-title {
+  font-size: 20px;
+}
+.eth__header-account_wallet-code {
+  font-weight: 100;
+}
+
+.eth__header-account_create {
+  margin: 20px 0;
+}
