@@ -1,0 +1,12 @@
+{
+  "server": {
+    "baseDir": [
+      "./client"
+    ],
+    "routes": {
+      "/libs/styles": "./client/css",
+      "/libs/scripts": "./client/js"
+    }
+  },
+  "port": "3000"
+}
