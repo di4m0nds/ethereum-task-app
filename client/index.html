@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main Styles CSS -->
+  <link rel="stylesheet" href="/libs/styles/main.css">
+  <!-- Tools Styles CSS -->
+  <link rel="stylesheet" href="/libs/styles/tools.css">
+  <link rel="stylesheet" href="/libs/styles/tools-header.css">
+  <link rel="stylesheet" href="/libs/styles/tools-tasks.css">
+  <link rel="stylesheet" href="/libs/styles/tools-gradients.css">
+
+  <title>Ethereum TaskApp</title>
+</head>
+<body>
+
+  <div class="eth">
+    <div class="eth__header">
+      <div class="eth__header-title">
+        <h1 class="gradient__text">Decentralized Task App</h1>
+      </div>
+
+      <div class="eth__header-subtitle">
+        <p>Ethereum Application <span>( with Solidity )</span></p>
+      </div>
+
+      <div class="eth__header-account">
+        <div class="eth__header-account_wallet">
+          <span class="eth__header-account_wallet-title">Your Wallet :</span>
+          <span class="eth__header-account_wallet-code">0x7a2c3E670fb26FB47376eE424E7641278cb1d09B</span>
+        </div>
+
+        <div class="eth__header-account_create">
+          <form action="">
+            <div class="block-form">
+              <label for="title">Write a Title :</label>
+              <input type="text" name="title" id="title">
+            </div>
+
+            <div class="block-form">
+              <label for="description">Write a Description :</label>
+              <input type="text" name="description" id="description">
+            </div>
+
+            <div class="block-form">
+              <button class="gradient__text">Sent Task</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="eth__tasks">
+      <div class="eth__tasks-task">
+        <p>Task List</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script from JS -->
+  <script src="/libs/scripts/app.js"></script>
+  
+</body>
+</html>
