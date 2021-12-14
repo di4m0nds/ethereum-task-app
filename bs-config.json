@@ -1,11 +1,13 @@
 {
   "server": {
     "baseDir": [
-      "./client"
+      "./client",
+      "./build/contracts"
     ],
     "routes": {
       "/libs/styles": "./client/css",
-      "/libs/scripts": "./client/js"
+      "/libs/scripts": "./client/js",
+      "/libs/pkgs": "./node_modules"
     }
   },
   "port": "3000"
