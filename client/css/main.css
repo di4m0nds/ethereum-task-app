@@ -3,14 +3,18 @@
 :root {
   --font-family: 'Outfit', sans-serif;
 
-  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
-  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --gradient-text: linear-gradient(89.97deg, #ff8c49 1.84%, #f46767 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ff7300 -13.86%, #f46767 99.55%);
+  --gradient-bg: linear-gradient(103.22deg, #500000 -13.86%, #f49867 99.55%);
 
   --color-bg: #040c18;
   --color-footer: #031b34;
   --color-blog: #042c54;
   --color-text: #81afdd;
   --color-subtext: #ff8a71;
+  --color-checkbox: #ff0000;
+  --color-btn: rgb(175, 87, 68);
+  --color-shadow: rgba(194, 0, 0, 0.856);
 }
 
 * {
@@ -22,7 +26,7 @@
 }
 
 body {
-  background: var(--color-bg);
+  background: var(--gradient-bg);
 }
 
 h1,
@@ -46,9 +50,20 @@ label {
 }
 
 input {
-  border: none transparent;
-  border-radius: 10px;
+  color: #fff;
+  border-width: 2px;
+  border-style: inset;
+  border-color: transparent;
+  border-radius: 4px;
   padding: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+  outline: none;
+}
+
+input:focus {
+  background: rgba(160, 103, 103, 0.4);
+  border: 2px solid transparent;
 }
 
 button {
@@ -58,9 +73,8 @@ button {
   font-size: 18px;
   cursor: pointer;
   border-radius: 10px;
-  border: 2px solid var(--color-subtext);
+  border: 2px solid var(--color-btn);
 }
 button:hover {
-  border: 2px solid transparent;
   border: 2px dashed var(--color-subtext);
 }

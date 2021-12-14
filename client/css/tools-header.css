@@ -13,10 +13,6 @@
   color: #fff;
   font-weight: 400;
 }
-.eth__header-subtitle p span {
-  font-weight: 100;
-  font-size: 14px;
-}
 
 .eth__header-account,
 .eth__header-account_wallet {
@@ -25,7 +21,7 @@
 }
 .eth__header-account_wallet {
   padding: 10px 0;
-  margin-top: 20px;
+  margin-top: 100px;
   color: #fff;
   border-bottom: 2px dashed #fff;
 }
@@ -37,5 +33,34 @@
 }
 
 .eth__header-account_create {
-  margin: 20px 0;
+  margin: 60px 0 20px 0;
+}
+.eth__header-account_create-title {
+  margin: 15px;
+}
+.eth__header-account_create-title h3 {
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 475px) {
+  .eth__header-account_wallet-code {
+    position: relative;
+    left: -2%;
+  }
+}
+@media screen and (max-width: 431px) {
+  .eth__header-account_wallet-code {
+    position: relative;
+    left: -2%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .eth__header-account_wallet-code {
+    position: relative;
+    left: -5%;
+    font-size: 14px;
+  }
 }

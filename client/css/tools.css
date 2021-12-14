@@ -1,5 +1,6 @@
 .eth {
   display: flex;
+  flex-direction: row;
   width: 80%;
   margin-left: 10%;
   margin-top: 25px;
@@ -15,4 +16,45 @@
 
 .block-form label {
   color: #fff;
+}
+
+@media screen and (max-width: 1331px) {
+  .eth {
+    flex-direction: column;
+  }
+  .eth__header {
+    flex: 1;
+  }
+  .eth__tasks {
+    flex: 1;
+  }
+}
+
+/*** Works on common browsers ***/
+::selection {
+  background-color: #0700525b;
+  color: #fff !important;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+  background-color: #0700525b;
+  color: #fff !important;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+  background-color: #0700525b;
+  color: #fff !important;
+}
+
+::-ms-selection {
+  background-color: #0700525b;
+  color: #fff !important;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+  background-color: #0700525b;
+  color: #fff !important;
 }
