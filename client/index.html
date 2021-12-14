@@ -7,6 +7,7 @@
 
   <!-- Main Styles CSS -->
   <link rel="stylesheet" href="/libs/styles/main.css">
+  <link rel="stylesheet" href="/libs/styles/animista.css">
   <!-- Tools Styles CSS -->
   <link rel="stylesheet" href="/libs/styles/tools.css">
   <link rel="stylesheet" href="/libs/styles/tools-header.css">
@@ -18,23 +19,27 @@
 <body>
 
   <div class="eth">
+    <!-- Header -->
     <div class="eth__header">
       <div class="eth__header-title">
         <h1 class="gradient__text">Decentralized Task App</h1>
       </div>
 
       <div class="eth__header-subtitle">
-        <p>Ethereum Application <span>( with Solidity )</span></p>
+        <p>Ethereum Application</p>
       </div>
 
       <div class="eth__header-account">
         <div class="eth__header-account_wallet">
           <span class="eth__header-account_wallet-title">Your Wallet :</span>
-          <span class="eth__header-account_wallet-code">0x7a2c3E670fb26FB47376eE424E7641278cb1d09B</span>
+          <span class="eth__header-account_wallet-code" id="wallet-code"></span>
         </div>
 
         <div class="eth__header-account_create">
-          <form action="">
+          <div class="eth__header-account_create-title">
+            <h3>Create a Task</h3>
+          </div>
+          <form class="eth__header-account_create-form" id="task-form">
             <div class="block-form">
               <label for="title">Write a Title :</label>
               <input type="text" name="title" id="title">
@@ -46,22 +51,22 @@
             </div>
 
             <div class="block-form">
-              <button class="gradient__text">Sent Task</button>
+              <button class="gradient__text">Send Task</button>
             </div>
           </form>
         </div>
       </div>
     </div>
 
-    <div class="eth__tasks">
-      <div class="eth__tasks-task">
-        <p>Task List</p>
-      </div>
-    </div>
+    <!-- List of tasks imported -->
+    <div class="eth__tasks" id="task-list"></div>
   </div>
 
   <!-- Script from JS -->
+  <script src="/libs/pkgs/@truffle/contract/dist/truffle-contract.min.js"></script>
   <script src="/libs/scripts/app.js"></script>
+  <script src="/libs/scripts/ui.js"></script>
+  
   
 </body>
 </html>
