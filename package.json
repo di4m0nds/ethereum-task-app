@@ -7,8 +7,8 @@
     "test": "test"
   },
   "dependencies": {
-    "@truffle/contract": "^4.3.43",
-    "lite-server": "^2.6.1"
+    "@truffle/contract": "4.5.13",
+    "lite-server": "2.6.1"
   },
   "devDependencies": {},
   "scripts": {
